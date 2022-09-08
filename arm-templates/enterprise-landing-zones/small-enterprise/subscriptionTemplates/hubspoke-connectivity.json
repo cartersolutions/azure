@@ -153,15 +153,15 @@
         }
     },
     "variables": {
-        "vpngwname": "[concat(parameters('topLevelManagementGroupPrefix'), '-vpngw-', parameters('location'))]",
-        "erGwName": "[concat(parameters('topLevelManagementGroupPrefix'), '-ergw-', parameters('location'))]",
-        "rgName": "[concat(parameters('topLevelManagementGroupPrefix'), '-vnethub-', parameters('location'))]",
-        "azFwPolicyName": "[concat(parameters('topLevelManagementGroupPrefix'), '-azfwpolicy-', parameters('location'))]",
-        "hubName": "[concat(parameters('topLevelManagementGroupPrefix'), '-hub-', parameters('location'))]",
-        "azVpnGwIpName": "[concat(variables('vpngwname'), '-pip')]",
+        "vpnGwName": "[concat('hub-vpngw-', parameters('location'))]",
+        "erGwName": "[concat('hub-ergw-', parameters('location'))]",
+        "rgName": "[concat('hub-vnethub-', parameters('location'), '-rg')]",
+        "azFwPolicyName": "[concat('hub-azfwpolicy-', parameters('location'))]"
+        "hubName": "[concat('hub-', parameters('location'))]",
+        "azVpnGwIpName":  "[concat('hub-gwpip-', parameters('location'))]",
         "azVpnGwSubnetId": "[concat('/subscriptions/', parameters('connectivitySubscriptionId'), '/resourceGroups/', variables('rgName'),'/providers/Microsoft.Network/virtualNetworks/', variables('hubname'), '/subnets/GatewaySubnet')]",
-        "azFwName": "[concat(parameters('topLevelManagementGroupPrefix'), '-fw-', parameters('location'))]",
-        "azErGwIpName": "[concat(variables('erGwName'), '-pip')]",
+        "azFwName": "[concat('hub-fw-', parameters('location'))]",
+        "azErGwIpName": "[concat('hub-erpip-', parameters('location'))]",
         "azVpnGwPipId": "[concat('/subscriptions/', parameters('connectivitySubscriptionId'), '/resourceGroups/', variables('rgName'), '/providers/Microsoft.Network/publicIPAddresses/', variables('azVpnGwIpName'))]",
         "azFwIpName": "[concat(variables('azFwName'), '-pip')]",
         "azErGwSubnetId": "[concat('/subscriptions/', parameters('connectivitySubscriptionId'), '/resourceGroups/', variables('rgName'),'/providers/Microsoft.Network/virtualNetworks/', variables('hubname'), '/subnets/GatewaySubnet')]",
