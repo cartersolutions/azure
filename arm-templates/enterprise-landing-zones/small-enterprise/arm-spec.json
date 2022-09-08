@@ -822,7 +822,7 @@
             "ddosRg": "[concat('hub', '-ddos-rg'))]",
             "privateDnsRg": "[concat('hub', '-privatedns-rg'))]",
             "identityVnetRg": "[concat(['hub', '-vnet-', parameters('connectivityLocation'), '-rg'])]",
-            "lzVnetRg": "[concat('hub', ['-vnet-', parameters('connectivityLocation'), '-rg'])]"
+            "lzVnetRg": "[concat(['hub', '-vnet-', parameters('connectivityLocation'), '-rg'])]"
         },
         // Declaring deterministic names for platform resources that will be created
         "platformResourceNames": {
