@@ -818,10 +818,10 @@
         "platformRgNames": {
             "mgmtRg": "hub-mgmt-rg",
             "azOpsRg": "hub-azops-rg",
-            "connectivityRg": "[concat('hub', ['-vnethub-', parameters('connectivityLocation'), '-rg'])]",
+            "connectivityRg": "[concat(['hub', '-vnethub-', parameters('connectivityLocation'), '-rg'])]",
             "ddosRg": "[concat('hub', '-ddos-rg'))]",
             "privateDnsRg": "[concat('hub', '-privatedns-rg'))]",
-            "identityVnetRg": "[concat('hub', ['-vnet-', parameters('connectivityLocation'), '-rg'])]",
+            "identityVnetRg": "[concat(['hub', '-vnet-', parameters('connectivityLocation'), '-rg'])]",
             "lzVnetRg": "[concat('hub', ['-vnet-', parameters('connectivityLocation'), '-rg'])]"
         },
         // Declaring deterministic names for platform resources that will be created
