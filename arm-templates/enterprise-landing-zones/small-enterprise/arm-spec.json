@@ -818,7 +818,7 @@
         "platformRgNames": {
             "mgmtRg": "hub-mgmt-rg",
             "azOpsRg": "hub-azops-rg",
-            "connectivityRg": "[concat(['hub-vnethub-', parameters('connectivityLocation'), '-rg'])]",
+            "connectivityRg": "[concat('hub-vnethub-', parameters('connectivityLocation'), '-rg')]",
             "ddosRg": "hub-ddos-rg",
             "privateDnsRg": "hub-privatedns-rg",
             "identityVnetRg": "[concat('hub-vnet-', parameters('connectivityLocation'), '-rg')]",
