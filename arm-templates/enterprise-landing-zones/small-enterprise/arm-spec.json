@@ -660,13 +660,13 @@
         // Declaring the prescriptive management group structure that will be used in the scope construction
         "mgmtGroups": {
             "eslzRoot": "[parameters('enterpriseScaleCompanyPrefix')]",
-            "platform": "[concat(parameters('enterpriseScaleCompanyPrefix'), '-', 'hub', '-', 'mgp')]",
-            "management": "[concat(parameters('enterpriseScaleCompanyPrefix'), '-', 'management')]",
-            "connectivity": "[concat(parameters('enterpriseScaleCompanyPrefix'), '-', 'connectivity')]",
-            "identity": "[concat(parameters('enterpriseScaleCompanyPrefix'), '-', 'identity')]",
-            "lzs": "[concat(parameters('enterpriseScaleCompanyPrefix'), '-', 'lz', '-', 'mgp')]",
-            "corp": "[concat(parameters('enterpriseScaleCompanyPrefix'), '-', 'az', '-', 'msc', '-', 'corp', '-', 'mgp')]",
-            "online": "[concat(parameters('enterpriseScaleCompanyPrefix'), '-', 'az', '-', 'msc', '-', 'online', '-', 'mgp')]"
+            "platform": "[concat(parameters('enterpriseScaleCompanyPrefix'), '-hub-mgp')]",
+            "management": "[concat(parameters('enterpriseScaleCompanyPrefix'), '-management')]",
+            "connectivity": "[concat(parameters('enterpriseScaleCompanyPrefix'), '-connectivity')]",
+            "identity": "[concat(parameters('enterpriseScaleCompanyPrefix'), '-identity')]",
+            "lzs": "[concat(parameters('enterpriseScaleCompanyPrefix'), '-lz-mgp')]",
+            "corp": "[concat(parameters('enterpriseScaleCompanyPrefix'), '-az-msc-corp-mgp')]",
+            "online": "[concat(parameters('enterpriseScaleCompanyPrefix'), '-az-msc-online-mgp')]"
         },
         // Declaring scopes that will be used for optional deployments, such as platform components (monitoring, networking, identity), policy assignments, subscription placement etc.
         "scopes": {
