@@ -156,7 +156,7 @@
         "vpnGwName": "[concat('hub-vpngw-', parameters('location'))]",
         "erGwName": "[concat('hub-ergw-', parameters('location'))]",
         "rgName": "[concat('hub-vnethub-', parameters('location'), '-rg')]",
-        "azFwPolicyName": "[concat('hub-azfwpolicy-', parameters('location'))]"
+		"azFwPolicyName": "[concat('hub-azfwpolicy-', parameters('location'))]"
         "hubName": "[concat('hub-', parameters('location'))]",
         "azVpnGwIpName":  "[concat('hub-gwpip-', parameters('location'))]",
         "azVpnGwSubnetId": "[concat('/subscriptions/', parameters('connectivitySubscriptionId'), '/resourceGroups/', variables('rgName'),'/providers/Microsoft.Network/virtualNetworks/', variables('hubname'), '/subnets/GatewaySubnet')]",
